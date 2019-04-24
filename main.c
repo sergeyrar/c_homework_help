@@ -8,7 +8,7 @@ int main()
 	char **bigMat = (char **)malloc(sizeof(int)*COLUMNSBIG*ROWSBIG);
 
 	int countMax = -1;
-	char charMax = NULL;
+	char charMax;
 
 	inputMatrix(smallMat, ROWSSMALL, COLUMNSSMALL);
 	inputMatrix(bigMat, ROWSBIG, COLUMNSBIG);
@@ -20,18 +20,18 @@ int main()
 	printf("Big Matrix:\n");
 	printMatrix(bigMat, ROWSBIG, COLUMNSBIG);
 
-	if (charMax != NULL && countMax != -1 )
+	if (countMax != -1 )
 	printf("Most repetitive %c ....%d \n", charMax ,countMax);
 
-	char str=NULL,str1=NULL,str2=NULL;
+	char *str = NULL,*str1=NULL,*str2=NULL;
 	str = makestring (smallMat);  /* validate call to makestring */
 
 	printf ("string: %s\n", str);    /* output string */
 
-
+#if 0
      swap1(&str1, &str2);
      printf("str1 is %s, str2 is %s", str1, str2);
      getchar();
-
+#endif
 	return 0;
 }

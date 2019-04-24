@@ -1,9 +1,9 @@
 #pragma once
 
 #define COLUMNSBIG 15
-#define ROWSBIG 3
-#define COLUMNSSMALL 3
-#define ROWSSMALL 3
+#define ROWSBIG 4
+#define COLUMNSSMALL 4
+#define ROWSSMALL 4
 #define SIZE 4
 
 void count(char **bigMat, char **smallMat, char *tavMax, int *countMax);
